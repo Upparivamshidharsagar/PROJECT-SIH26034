@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from database.db import get_db_connection
+from backend.database.db import get_db_connection
 from pydantic import BaseModel
 
 router = APIRouter()
