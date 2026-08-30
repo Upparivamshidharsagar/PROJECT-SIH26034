@@ -20,17 +20,18 @@ if uploaded_image is not None:
     )
 
     st.success("Image uploaded successfully!")
+
     if st.button("🗑️ Remove Image"):
         st.rerun()
 
     if st.button("🔍 Check Compliance"):
 
-        with st.spinner("🔍 Analyzing product..."):
-            time.sleep(3)
+     with st.spinner("🔍 Analyzing product..."):
 
-        st.success("Analysis completed!")
+        st.info("Sending image for analysis...")
 
-        st.subheader("📋 Compliance Results")
+    st.success("Image sent for analysis.")
+st.subheader("📋 Compliance Results")
 
 col1, col2 = st.columns(2)
 
