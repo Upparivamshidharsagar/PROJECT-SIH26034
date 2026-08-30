@@ -23,7 +23,7 @@ if uploaded_image is not None:
     if st.button("🔍 Check Compliance"):
 
         with st.spinner("🔍 Analyzing product..."):
-            time.sleep(1)
+            time.sleep(3)
 
         st.success("Analysis completed!")
 
